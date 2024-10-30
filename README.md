@@ -1,4 +1,5 @@
 # TWRP device tree for Lenovo Legion Y700 (2023) (TB320FC)
+Originally tree: https://github.com/polygraphene/android_device_lenovo_TB320FC
 
 8.8 inch a high-end tablet released on 2023.
 
@@ -15,7 +16,7 @@
    ```sh
    fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
    ```
-4. Download recovery image from the [release](https://github.com/polygraphene/android_device_lenovo_TB320FC/releases)
+4. Download recovery image from the [release](https://github.com/lddnsk/android_device_lenovo_TB320FC/releases)
 5. Flash recovery
    - Run the following command.
    ```sh
@@ -40,19 +41,21 @@ Blocking checks
 - [x] Restore from internal/microSD
 - [x] all important partitions listed in mount/backup lists
 - [x] reboot to system
+- [x] reboot to bootloader
+- [x] reboot to recovery
+- [x] poweroff
 - [x] ADB
 - [x] MTP export
-- [x] reboot to bootloader
-- [x] poweroff
 - [x] battery level
 - [x] temperature
-- [x] reboot to recovery
+- [x] Screen goes off and on
+- [x] set brightness
+- [x] screenshot
 
 Medium checks
 - [ ] update.zip sideload  
   Not tested
 - [x] UI colors (red/blue inversions)
-- [x] Screen goes off and on
 - [ ] F2FS/EXT4 Support, exFAT/NTFS where supported  
   Not tested
 - [x] backup/restore to/from external (USB-OTG) storage (not supported by the device)
@@ -66,9 +69,7 @@ Minor checks
   Not tested
 - [x] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
 - [ ] USB mass storage export
-- [x] set brightness
 - [ ] vibrate
-- [x] screenshot
 - [ ] partition SD card  
   Not tested
 

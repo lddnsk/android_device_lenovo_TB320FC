@@ -150,6 +150,7 @@ TW_HAS_EDL_MODE := true
 TW_SKIP_ADDITIONAL_FSTAB := true
 
 TW_NO_HAPTICS := true
+#tests
 #TW_LOAD_VENDOR_MODULES := "haptic.ko"
 #TW_LOAD_VENDOR_MODULES += \
 #	vendor.display.config@2.0
