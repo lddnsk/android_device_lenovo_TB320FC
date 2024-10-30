@@ -9,7 +9,7 @@ on:
 env:
   MANIFEST_URL: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp
   MANIFEST_BRANCH: twrp-12.1
-  DEVICE_TREE_URL: https://github.com/polygraphene/android_device_lenovo_TB320FC
+  DEVICE_TREE_URL: https://github.com/lddnsk/android_device_lenovo_TB320FC
   DEVICE_TREE_BRANCH: android-12.1
   DEVICE_PATH: device/lenovo/TB320FC
   DEVICE_NAME: TB320FC
