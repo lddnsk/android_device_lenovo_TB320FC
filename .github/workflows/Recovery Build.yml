@@ -78,8 +78,8 @@ jobs:
         mkdir workspace
         cd workspace
         echo "workspace-folder=$(pwd)" >> $GITHUB_OUTPUT
-        git config --global user.name "polygraphene"
-        git config --global user.email "polygraphene@gmail.com"
+        git config --global user.name "lddnsk"
+        git config --global user.email "lddnsk@gmail.com"
         repo init --depth=1 -u ${MANIFEST_URL} -b ${MANIFEST_BRANCH}
       id: pwd
           
@@ -171,5 +171,5 @@ jobs:
           Output: ${{ steps.version.outputs.OUTPUT_FILEBASE }}-portrait.img
           Output: ${{ steps.version.outputs.OUTPUT_FILEBASE }}-landscape.img
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TWRP_SECRET }}
 
