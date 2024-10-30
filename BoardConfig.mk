@@ -161,6 +161,7 @@ TW_NO_HAPTICS := true
 #TW_SUPPORT_INPUT_1_2_HAPTICS := true
 
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone41/temp
+
 TW_MTP_DEVICE := /dev/usb-ffs/mtp
 TW_EXCLUDE_TWRPAPP := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
