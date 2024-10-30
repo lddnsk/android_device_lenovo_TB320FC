@@ -30,7 +30,7 @@ Originally tree: https://github.com/polygraphene/android_device_lenovo_TB320FC
 
 ## When not boot
   - Make sure AVB is disabled by step 3.
-  - Try to flash boot or verndor_boot partition from stock ROM.
+  - Try to flash boot or vendor_boot partition from stock ROM.
 
 ## Supported features
 
