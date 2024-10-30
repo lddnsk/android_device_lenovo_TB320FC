@@ -44,4 +44,3 @@ odm                 /odm		ext4		ro,barrier=1,discard				wait,logical,first_stage
 /external_sd		auto		/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=display="Micro SD Card";storage;wipeingui;removable
 /usb_otg			auto		/dev/block/sdi1			/dev/block/sdi			flags=display="USB-OTG 1";storage;wipeingui;removable
 /usb_otg_2			auto		/dev/block/sdj1			/dev/block/sdj			flags=display="USB-OTG 2";storage;wipeingui;removable
-
