@@ -38,8 +38,15 @@ Blocking checks
 - [x] Working Touch, screen
 - [x] Backup to internal/microSD
 - [x] Restore from internal/microSD
+- [x] all important partitions listed in mount/backup lists
 - [x] reboot to system
 - [x] ADB
+- [x] MTP export
+- [x] reboot to bootloader
+- [x] poweroff
+- [x] battery level
+- [x] temperature
+- [x] reboot to recovery
 
 Medium checks
 - [ ] update.zip sideload  
@@ -48,7 +55,6 @@ Medium checks
 - [x] Screen goes off and on
 - [ ] F2FS/EXT4 Support, exFAT/NTFS where supported  
   Not tested
-- [x] all important partitions listed in mount/backup lists
 - [x] backup/restore to/from external (USB-OTG) storage (not supported by the device)
 - [ ] backup/restore to/from adb (https://gerrit.omnirom.org/#/c/15943/)  
   Not tested
@@ -56,13 +62,7 @@ Medium checks
 - [x] Correct date
 
 Minor checks
-- [x] MTP export  
-- [x] reboot to bootloader
-- [x] reboot to recovery
-- [x] poweroff
-- [x] battery level
-- [x] temperature
-- [ ] encrypted backups  
+- [ ] encrypted backups
   Not tested
 - [x] input devices via USB (USB-OTG) - keyboard, mouse and disks (not supported by the device)
 - [ ] USB mass storage export
@@ -111,7 +111,7 @@ mkdir -p .repo/local_manifests
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<project name="polygraphene/android_device_lenovo_TB320FC" path="device/lenovo/TB320FC" remote="github" revision="android-12.1"/>
+	<project name="lddnsk/android_device_lenovo_TB320FC" path="device/lenovo/TB320FC" remote="github" revision="android-12.1"/>
 </manifest>
 ```
 
