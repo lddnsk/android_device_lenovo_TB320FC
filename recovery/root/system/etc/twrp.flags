@@ -5,8 +5,8 @@
 # Mount point		FS			Device		2nd Device							Flags
 /boot				emmc		/dev/block/bootdevice/by-name/boot				flags=backup=1;display="Boot";slotselect;flashimg=1
 /dtbo				emmc		/dev/block/bootdevice/by-name/dtbo				flags=backup=1;display="DTBO";slotselect;flashimg=1
-/vbmeta				emmc		/dev/block/bootdevice/by-name/vbmeta			flags=backup=1;display="VbMeta"
-/vbmeta_system		emmc		/dev/block/bootdevice/by-name/vbmeta_system		flags=backup=1;display="VbMeta_System"
+/vbmeta				emmc		/dev/block/bootdevice/by-name/vbmeta			flags=backup=1;display="VbMeta";slotselect
+/vbmeta_system		emmc		/dev/block/bootdevice/by-name/vbmeta_system		flags=backup=1;display="VbMeta_System";slotselect
 
 # Logical Points
 system              /system		ext4		ro,barrier=1,discard				wait,logical,first_stage_mount
