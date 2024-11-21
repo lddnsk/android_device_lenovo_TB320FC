@@ -6,7 +6,7 @@
 /boot				emmc		/dev/block/bootdevice/by-name/boot				flags=backup=1;display="Boot";slotselect;flashimg=1
 /dtbo				emmc		/dev/block/bootdevice/by-name/dtbo				flags=backup=1;display="DTBO";slotselect;flashimg=1
 /vbmeta				emmc		/dev/block/bootdevice/by-name/vbmeta			flags=backup=1;display="VbMeta"
-/vbmeta_system		emmc		/dev/block/bootdevice/by-name/vbmeta_system		flags=backup=1;display=vbmeta_system
+/vbmeta_system		emmc		/dev/block/bootdevice/by-name/vbmeta_system		flags=backup=1;display="VbMeta_System"
 
 # Logical Points
 system              /system		ext4		ro,barrier=1,discard				wait,logical,first_stage_mount
@@ -16,7 +16,7 @@ odm                 /odm		ext4		ro,barrier=1,discard				wait,logical,first_stage
 
 # Direct image flashing
 /system_image		emmc		/dev/block/bootdevice/by-name/system			flags=backup=1;flashimg=1;display="System Image"
-/system_ext_image	emmc		/dev/block/bootdevice/by-name/system_ext		flags=backup=1;flashimg=1;display="System EXT Image"
+/system_ext_image	emmc		/dev/block/bootdevice/by-name/system_ext		flags=backup=1;flashimg=1;display="System_ext Image"
 /odm_image			emmc		/dev/block/bootdevice/by-name/odm				flags=backup=1;flashimg=1;display="ODM Image"
 /product_image		emmc		/dev/block/bootdevice/by-name/product			flags=backup=1;flashimg=1;display="Product Image"
 /vendor_image		emmc		/dev/block/bootdevice/by-name/vendor			flags=backup=1;flashimg=1;display="Vendor Image"
@@ -37,7 +37,7 @@ odm                 /odm		ext4		ro,barrier=1,discard				wait,logical,first_stage
 /oemowninfo			emmc		/dev/block/bootdevice/by-name/oemowninfo		flags=backup=1;display="oemowninfo";flashimg=1
 
 # Persist Point
-#/persist			ext4		/dev/block/bootdevice/by-name/persist			flags=backup=1;display="Persist";fsflags=ro
+/persist			ext4		/dev/block/bootdevice/by-name/persist			flags=backup=1;display="Persist";fsflags=ro
 /persist_image		emmc		/dev/block/bootdevice/by-name/persist			flags=backup=1;display="Persist Image";flashimg=1
 
 # SD Card & USB-OTG Points
